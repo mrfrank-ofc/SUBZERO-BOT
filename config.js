@@ -5,6 +5,10 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
+//===========================
+//  PUT YOUR SETTINGS BELOW 👇
+//===========================
+    
 SESSION_ID: process.env.SESSION_ID || "",
 // add your Session Id 
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
