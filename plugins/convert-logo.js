@@ -228,12 +228,12 @@ cmd({
     alias: ["logomenu"],
     desc: "menu the bot",
     category: "menu",
-    react: "🎀",
+    react: "🤹‍♂️",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `*╭───❍「 SUBZERO LOGOS」❍*
+        let dec = `*╭───❍「 SUBZERO LOGO'S 」❍*
 ‎*├⬡ .ɴᴇᴏɴʟɪɢʜᴛ*
 ‎*├⬡ .ʙʟᴀᴄᴋᴘɪɴᴋ*
 ‎*├⬡ .ᴅʀᴀɢᴏɴʙᴀʟʟ*
@@ -270,7 +270,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://cdn.ironman.my.id/i/m8r9ux.jpg` },
+                image: { url: `https://i.postimg.cc/xdcd32vs/IMG-20250329-WA0124.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -278,7 +278,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363318387454868@newsletter',
-                        newsletterName: "SUBZERO MD⎯꯭̽🪼🧸₊",
+                        newsletterName: "ⓈⓊⒷⓏⒺⓇⓄ ⓁⓄⒼⓄ",
                         serverMessageId: 143
                     }
                 }
