@@ -220,7 +220,7 @@ Support      : wa.me/18062212660
 
 const { cmd, commands } = require('../command');
 const axios = require('axios');
-const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson } = require('../lib/functions');
+const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson } = require('../lib/functions2');
 
 cmd({
     pattern: "3dcomic",
