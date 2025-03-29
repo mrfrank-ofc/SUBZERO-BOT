@@ -277,7 +277,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363318387454868@newsletter',
+                        newsletterJid: '120363304325601080@newsletter',
                         newsletterName: "ⓈⓊⒷⓏⒺⓇⓄ ⓁⓄⒼⓄ",
                         serverMessageId: 143
                     }
