@@ -222,6 +222,79 @@ const { cmd, commands } = require('../command');
 const axios = require('axios');
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson } = require('../lib/functions2');
 
+
+cmd({
+    pattern: "logo",
+    alias: ["logomenu"],
+    desc: "menu the bot",
+    category: "menu",
+    react: "🎀",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `*╭───❍「 SUBZERO LOGOS」❍*
+‎*├⬡ .ɴᴇᴏɴʟɪɢʜᴛ*
+‎*├⬡ .ʙʟᴀᴄᴋᴘɪɴᴋ*
+‎*├⬡ .ᴅʀᴀɢᴏɴʙᴀʟʟ*
+‎*├⬡ .𝟹ᴅᴄᴏᴍɪᴄ*
+‎*├⬡ .ᴀᴍᴇʀɪᴄᴀ*
+‎*├⬡ .ɴᴀʀᴜᴛᴏ*
+‎*├⬡ .sᴀᴅɢɪʀʟ*
+‎*├⬡ .ᴄʟᴏᴜᴅs*
+‎*├⬡ .ғᴜᴛᴜʀɪsᴛɪᴄ*
+‎*├⬡ .𝟹ᴅᴘᴀᴘᴇʀ*
+‎*├⬡ .ᴇʀᴀsᴇʀ*
+‎*├⬡ .sᴜɴsᴇᴛ*
+‎*├⬡ .ʟᴇᴀғ*
+‎*├⬡ .ɢᴀʟᴀxʏ*
+‎*├⬡ .sᴀɴs*
+‎*├⬡ .ʙᴏᴏᴍ*
+‎*├⬡ .ʜᴀᴄᴋᴇʀ*
+‎*├⬡ .ᴅᴇᴠɪʟᴡɪɴɢs*
+‎*├⬡ .ɴɪɢᴇʀɪᴀ*
+‎*├⬡ .ʙᴜʟʙ*
+‎*├⬡ .ᴀɴɢᴇʟᴡɪɴɢs*
+‎*├⬡ .ᴢᴏᴅɪᴀᴄ*
+‎*├⬡ .ʟᴜxᴜʀʏ*
+‎*├⬡ .ᴘᴀɪɴᴛ*
+‎*├⬡ .ғʀᴏᴢᴇɴ*
+‎*├⬡ .ᴄᴀsᴛʟᴇ*
+‎*├⬡ .ᴛᴀᴛᴏᴏ*
+‎*├⬡ .ᴠᴀʟᴏʀᴀɴᴛ*
+‎*├⬡ .ʙᴇᴀʀ*
+‎*├⬡ .ᴛʏᴘᴏɢʀᴀᴘʜʏ*
+‎*├⬡ .ʙɪʀᴛʜᴅᴀʏ*
+‎*╰───────────────❍*`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://cdn.ironman.my.id/i/m8r9ux.jpg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363318387454868@newsletter',
+                        newsletterName: "SUBZERO MD⎯꯭̽🪼🧸₊",
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+
+
+
 cmd({
     pattern: "3dcomic",
     desc: "Create a 3D Comic-style text effect",
