@@ -7,6 +7,7 @@ const path = require('path');
 
 cmd({
     pattern: "blocklist",
+    alias: "blacklist",
     desc: "View the list of blocked users.",
     category: "privacy",
     react: "📋",
@@ -40,6 +41,7 @@ cmd({
     pattern: "getbio",
     desc: "Displays the user's bio.",
     category: "privacy",
+    react: "📋",
     filename: __filename,
 }, async (conn, mek, m, { args, reply }) => {
     try {
@@ -103,6 +105,7 @@ async (conn, mek, m, { from, l, quoted, body, isCmd, command, args, q, isGroup, 
 
 cmd({
     pattern: "setpp",
+    alias: "setdp",
     desc: "Set bot profile picture.",
     category: "privacy",
     react: "🖼️",
@@ -132,6 +135,7 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
 
 cmd({
     pattern: "setmyname",
+    alias: "setname",
     desc: "Set your WhatsApp display name.",
     category: "privacy",
     react: "⚙️",
@@ -165,6 +169,7 @@ async (conn, mek, m, { from, isOwner, reply, args }) => {
 
 cmd({
     pattern: "updatebio",
+    alias: "setbio",
     react: "🥏",
     desc: "Change the Bot number Bio.",
     category: "privacy",
@@ -210,6 +215,7 @@ async (conn, mek, m, { from, l, quoted, body, isCmd, command, args, q, isGroup, 
 
 cmd({
     pattern: "getprivacy",
+    alias: "privacysettings",
     desc: "Get the bot Number Privacy Setting Updates.",
     category: "privacy",
     use: '.getprivacy',
@@ -239,6 +245,7 @@ async (conn, mek, m, { from, l, quoted, body, isCmd, command, args, q, isGroup, 
 });
 cmd({
     pattern: "getpp",
+    react: "📋",
     desc: "Fetch the profile picture of a tagged or replied user.",
     category: "owner",
     filename: __filename
