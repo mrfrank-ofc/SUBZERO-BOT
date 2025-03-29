@@ -26,11 +26,11 @@ async (conn, mek, m, { from, isOwner, reply }) => {
 
         // Format the blocked users with 📌 and count the total
         const list = blockedUsers
-            .map((user, i) => `🚧 BLOCKED ${user.split('@')[0]}`) // Remove domain and add 📌
+            .map((user, i) => `🚫 ʙʟᴏᴄᴋᴇᴅ ${user.split('@')[0]}`) // Remove domain and add 📌
             .join('\n');
 
         const count = blockedUsers.length;
-        reply(`📋 Blocked Users (${count}):\n\n${list}`);
+        reply(`📋 \`SUBZERO BLOCKED USERS (${count})\`:\n\n${list}`);
     } catch (err) {
         console.error(err);
         reply(`❌ Failed to fetch block list: ${err.message}`);
